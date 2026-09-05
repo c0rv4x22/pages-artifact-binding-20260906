@@ -25,7 +25,7 @@ jobs:
       - name: Create inert Pages artifact
         run: |
           mkdir site
-          printf '%s\n' 'PAGES_CROSS_RUN_CANARY_20260906' > site/index.html
+          printf '%s\n' 'PAGES_UNTRUSTED_BRANCH_CANARY_20260906' > site/index.html
       - name: Upload inert Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
